@@ -27,14 +27,14 @@
 
 # Create file with grafana.yaml name:
 	datasources:
-	datasources.yaml:
-		apiVersion: 1
-		datasources:
-		- name: Prometheus
-		type: prometheus
-		url: http://prometheus-server.prometheus.svc.cluster.local
-		access: proxy
-		isDefault: true
+	  datasources.yaml:
+	    apiVersion: 1
+	    datasources:
+	    - name: Prometheus
+	      type: prometheus
+	      url: http://prometheus-server.prometheus.svc.cluster.local
+	      access: proxy
+	      isDefault: true
 # Update dependencies for grafana
 	cd grafana
 	helm dependency update
