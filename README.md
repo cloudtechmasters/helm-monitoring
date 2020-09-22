@@ -57,3 +57,24 @@
 # Credentials:
     username: admin
     password: admin123   
+# Cluster Monitoring Dashboard
+For creating a dashboard to monitor the cluster:
+* Click '+' button on left panel and select 'Import'.
+* Enter 3119 dashboard id under Grafana.com Dashboard.
+* Click 'Load'.
+* Select 'Prometheus' as the endpoint under prometheus data sources drop down.
+* Click 'Import'.
+This will show monitoring dashboard for all cluster nodes:
+
+![image](https://user-images.githubusercontent.com/68885738/93885898-64bb9b80-fd02-11ea-80c0-d13dc292b7de.png)
+# Pods Monitoring Dashboard
+For creating a dashboard to monitor all the pods:
+* Click '+' button on left panel and select ‘Import’.
+* Enter 6417 dashboard id under Grafana.com Dashboard.
+* Click 'Load'.
+* Enter Kubernetes Pods Monitoring as the Dashboard name.
+* Click change to set the Unique identifier (uid).
+* Select 'Prometheus' as the endpoint under prometheus data sources drop down.s
+* Click 'Import'.
+
+![image](https://user-images.githubusercontent.com/68885738/93886127-acdabe00-fd02-11ea-8a00-4ba187bc3480.png)
